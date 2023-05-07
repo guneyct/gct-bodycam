@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&effect=outline" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0);
+            margin: 0px auto;
+            overflow: hidden;
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 15px;
+            color: #AFAFAF;
+        }
+        
+        .Blink {
+            animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+        }
+        
+        @keyframes blinker {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        
+        .top-right {
+            float: right;
+            width: auto;
+            text-align: right;
+        }
+        
+        .top-right-container {
+            float: right;
+            width: auto;
+            text-align: right;
+            /* edit the fourth value of the next line to change opacity */
+            /* 0.0 is clear, 1.0 is completely opaque                   */
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            margin: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        
+        .container {
+            width: 100wh;
+            height: 100vh;
+        }
+		
+		.logo {
+			padding-top: 3px!important
+		}
+		
+		#job {
+			padding-right: 15px;
+		}
+		
+		.tarih {
+			margin-right: 7%!important;
+		}
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+   </head>
+    <body>	
+        </br>
+		
+        <div class="bodycam" id="camera">
+            <div class="top-right-container">
+        <div class="top-right">
+            <img src="lspd.png" width="80" height="80" border="0" class="logo">
+        </div>
+        <div class="top-right">
+            &nbsp;REC&nbsp;<i class="fa fa-circle text-danger Blink"></i><span id="job">&nbsp;&nbsp;&nbsp;LOS SANTOS POLIS DEPARTMANI&nbsp;&nbsp;</span><br />
+            <span id="grade">XXX</span>&nbsp;&nbsp;<br />
+            <span id="player">XXX</span>&nbsp;&nbsp;<br />
+            <span style="padding:0px;margin:0px;" id="day">00</span>
+			<span style="padding:0px;margin:0px;" id="day">/</span>
+            <span style="padding:0px;margin:0px;" id="month">XXX</span>
+			<span style="padding:0px;margin:0px;" id="day">/</span>
+            <span class="tarih" style="padding:0px;margin:0px;" id="year">0000</span>&nbsp;
+            <span style="padding:0px;margin:0px;" id="hr">00</span>
+            <span style="padding:0px;margin:0px;">:</span>
+            <span style="padding:0px;margin:0px;" id="min">00</span>
+            <span style="padding:0px;margin:0px;">:</span>
+            <span style="padding:0px;margin:0px;" id="sec">00</span>&nbsp;&nbsp;
+        </div>
+    </div>
+        </div>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

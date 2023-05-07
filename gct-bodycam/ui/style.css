@@ -1,0 +1,32 @@
+html { overflow-x: hidden !important; overflow-y: hidden !important; background-color: transparent !important;}
+
+body {background-color: transparent !important;}
+@import url('https://fonts.googleapis.com/css?family=Squada+One'rel="stylesheet");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.bodycam {
+    float: right;
+    position: relative;
+    right: 23px;
+    font-size: 110%;
+    top: -5px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    padding-top: 15px;
+    background-image: url("odznaka.png"); 
+    background-repeat: no-repeat, repeat;
+    height: 500px;
+    width: 300px;
+
+
+    
+}
+
+.p {
+}
+.odz {
+    margin-left:10px;
+    float: right;
+	width: 600px;
+    top: 10px;
+    position: relative;
+}
